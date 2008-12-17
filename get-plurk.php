@@ -23,7 +23,7 @@ $plurk_config['image'] = '<img src="' . get_bloginfo('wpurl') . '/wp-content/plu
 
 $plurk_config['fancyfeed'] = true;
 
-$plurk_config['origin'] = "roga 正在";
+$plurk_config['origin'] = "your-name-you-want-to-replace";
 
 $plurk_config['timediff'] = true;
 // show  48 hours ago or date time
