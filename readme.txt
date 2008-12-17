@@ -4,26 +4,22 @@ Donate link: http://blog.roga.tw/
 Tags: plurk
 Requires at least: 2.7
 Tested up to: 2.7
-Stable tag: 1.0.0
+Stable tag: 1.0.5
 
 "Get your Plurk" could get your plurks from www.plurk.com, and show it on your sidebar.
 You may enable cache option to save the PHP page gerneration time. 
 
 == Description ==
 
-    *  Cache the plurk to a static page, you don't need to read fetch feed every time.
-	*  Display link and post time or not.
-	*  Widget support.
+*  Cache the plurk to a static page, you don't need to read fetch feed every time.
+*  Display link and post time or not.
+*  Widget support.
 
 == Installation ==
 
-    * Put the "get-your-plurk" folder to plugin folders.
-	* chmod the "cahce.tmp" file permission to writable (chmod 666 cache.tmp).
-	* active the plugin
-
-== Contact ==
-
-http://blog.roga.tw
+* Put the "get-your-plurk" folder to plugin folders.
+* chmod the "cahce.tmp" file permission to writable (chmod 666 cache.tmp).
+* active the plugin
 
 == Screenshots ==
 

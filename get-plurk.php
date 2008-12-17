@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name:  Get your plurk
-Version: 1.0.0
+Version: 1.0.5
 Plugin URI: http://blog.roga.tw/get-your-plurk
 Description: Get your plurk
 Author: roga
