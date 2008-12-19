@@ -14,35 +14,41 @@ ul.gyp-get-plurks li {
 	color: #222222;	
 	border-bottom: 1px solid #A8D7FC;
 	background: #E3F2FE;
+	padding: 2px;
+}
+
+ul.gyp-get-plurks li:hover {
+	background: #e3f2fe;
 }
 
 ul.gyp-get-plurks li a, ul.gyp-get-plurks li a:visited {
-	color: #000000;
+	color: #000000;	
 }
 
-.gyp-userlink {
+a.gyp-userlink, a.gyp-userlink:visited {
 	font-weight: bold;
 }
 
+.gyp-fancy {margin: 0 3px 0 4px; padding: 0 3px; color: #FFFFFF;}
 	.gyp-loves {background: #B20C0C; border-bottom: 1px solid #334E09; border-right: 1px solid  #334E09;}
 	.gyp-likes {background: #CB2728; border-bottom: 1px solid #313131; border-right: 1px solid  #313131;}
 	.gyp-shares {background: #A74949; border-bottom: 1px solid #454545; border-right: 1px solid  #454545;}
 	.gyp-gives {background: #620E0E; border-bottom: 1px solid #313131; border-right: 1px solid  #313131;}
-.gyp-hates {background: #E57C43; border-bottom: 1px solid #E57C43; border-right: 1px solid  #E57C43;}
-.gyp-wants {background: #E57C43; border-bottom: 1px solid #E57C43; border-right: 1px solid  #E57C43;}
-.gyp-wishes {background: #E57C43; border-bottom: 1px solid #E57C43; border-right: 1px solid  #E57C43;}
-.gyp-needs {background: #E57C43; border-bottom: 1px solid #E57C43; border-right: 1px solid  #E57C43;}
-.gyp-will {background: #E57C43; border-bottom: 1px solid #E57C43; border-right: 1px solid  #E57C43;}
-.gyp-hopes {background: #E57C43; border-bottom: 1px solid #E57C43; border-right: 1px solid  #E57C43;}
-.gyp-asks {background: #E57C43; border-bottom: 1px solid #E57C43; border-right: 1px solid  #E57C43;}
-.gyp-has {background: #E57C43; border-bottom: 1px solid #E57C43; border-right: 1px solid  #E57C43;}
-.gyp-was {background: #E57C43; border-bottom: 1px solid #E57C43; border-right: 1px solid  #E57C43;}
-.gyp-wonders {background: #E57C43; border-bottom: 1px solid #E57C43; border-right: 1px solid  #E57C43;}
-.gyp-feels {background: #E57C43; border-bottom: 1px solid #E57C43; border-right: 1px solid  #E57C43;}}
-.gyp-thinks {background: #E57C43; border-bottom: 1px solid #E57C43; border-right: 1px solid  #E57C43;}
+	.gyp-hates {background: #111111; border-bottom: 1px solid #444444; border-right: 1px solid  #444444;}
+	.gyp-wants {background: #8DB241; border-bottom: 1px solid #334C08; border-right: 1px solid  #334C08;}
+	.gyp-wishes {background: #5BB017; border-bottom: 1px solid #334C08; border-right: 1px solid  #334C08;}
+	.gyp-needs {background: #7A9A37; border-bottom: 1px solid #304F09; border-right: 1px solid  #304F09;}	
+	.gyp-will {background: #B46DB9; border-bottom: 1px solid #6A2C6F; border-right: 1px solid  #6A2C6F;}	
+	.gyp-hopes {background: #E05BE9; border-bottom: 1px solid #6A2C6F; border-right: 1px solid #6A2C6F;}
+	.gyp-asks {background: #8361BC; border-bottom: 1px solid #6A2C6F; border-right: 1px solid  #6A2C6F;}
+	.gyp-has {background: #777777; border-bottom: 1px solid #334C08; border-right: 1px solid  #334C08;}
+	.gyp-was {background: #525252; border-bottom: 1px solid #313131; border-right: 1px solid  #313131;}
+	.gyp-wonders {background: #2E4E9E; border-bottom: 1px solid #313131; border-right: 1px solid  #313131;}
+	.gyp-feels {background: #2D83BE; border-bottom: 1px solid #304F09; border-right: 1px solid  #304F09;}
+	.gyp-thinks {background: #689CC1; border-bottom: 1px solid #254A64; border-right: 1px solid  #254A64;}
 	.gyp-says {background: #E57C43; border-bottom: 1px solid #E57C43; border-right: 1px solid  #E57C43;}
-.gyp-is {background: #E57C43; border-bottom: 1px solid #E57C43; border-right: 1px solid  #E57C43;}
-
+	.gyp-is {background: #E57C43; border-bottom: 1px solid #E57C43; border-right: 1px solid  #E57C43;}
+ 
 .gyp-plurk-time {
 	color: #AA5555;	
 	font-style: italic;		
@@ -53,12 +59,14 @@ ul.gyp-get-plurks li a, ul.gyp-get-plurks li a:visited {
 	font-size: 9px;
 }
 
-.gyp-plurk-detail, .gyp-plurk-detail a, .gyp-plurk-detail a:visited  {
+.gyp-plurk-detail  {
 	font-family: Verdana;
 	font-size: 10px;
 	margin: 1em 0;
 	text-align: right;
 	border-top: 1px solid #7F7F7F;
 	padding: 0.5em 0;	
-	color: #000000;		
+}
+.gyp-plurk-detail a, .gyp-plurk-detail a:visited  {	
+	color: #660000;
 }

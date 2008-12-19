@@ -50,30 +50,27 @@ function get_plurk_feeds($username = '', $count = 10, $showtime = true, $timedif
 		}
 		else
 		{
+			
+				
 			$i = 1;
 			foreach ( $feeds->items as $feed )
 			{				
-				$result = '<li>';
+				$result .= '<li>';
 				
 				// generate links start 
-				
-				$result .= '<a href="http://www.plurk.com' . $feed['link_'] . '" class="userlink">' . $feed['author_name'] .'</a>';
-								
-				$locale = explode ("|",file_get_contents( WP_PLUGIN_DIR . '/get-your-plurk/lang.'. $lang . '.cfg'));
 
+				$locale = explode ("|",file_get_contents( WP_PLUGIN_DIR . '/get-your-plurk/lang.'. $lang . '.cfg'));
+			
+				// 	make patterns
 				for($j = 0; $j<count($locale); $j++)
-					$patterns[$j] = '/' . $feed['author_name'] . ' ' . $pattern[$j] . ' /';   
-				// make patterns						
+					$patterns[$j] = '/^' . $username . ' ' . $locale[$j] . ' /';   			
 
 				$replacements = explode ("|",file_get_contents( WP_PLUGIN_DIR . '/get-your-plurk/lang.css.cfg'));
-				for($j = 0; $j<count($replacements); $j++)
-					$replacements[$j] = '<span class="' . $replacements[$j] .'">'. $feed['author_name'] . '&nbsp;' . $locale[$j]  . '&nbsp;</span>';
-				
-				$result .= preg_replace($pattern, $replacements ,$feed['atom_content'], 1);				
-					
-						
-				$result .= '</span>';
 
+				for($j = 0; $j<count($replacements); $j++)
+					$replacements[$j] = '<a href="http://www.plurk.com' . $feed['link_'] . '" class="gyp-userlink">'. $feed['author_name'] . '</a>&nbsp;<span class="gyp-fancy ' . $replacements[$j] .'">'. $locale[$j]  . '</span>&nbsp;';											
+				
+				$result .= preg_replace($patterns, $replacements , $feed['atom_content'], 1);				 								
 				// generate links end 
 				
 				// generate date time start 
@@ -84,12 +81,12 @@ function get_plurk_feeds($username = '', $count = 10, $showtime = true, $timedif
 						$time = substr(((time() - strtotime($feed['published'])) / 3600), 0, 4);
 						if(strpos($time, ".") == 4)
 							$time = str_replace(".", "", $time);
-						$result .= ' <span class="plurk-time">' . $time . ' hours ago</span>';
+						$result .= ' <span class="gyp-plurk-time">' . $time . ' hours ago</span>';
 					}
 					else
 					{
 						$time = strftime("%Y/%m/%d %H:%M", strtotime($feed['published']));
-						$result .= ' <span class="plurk-time">' . $time . '</span>';
+						$result .= ' <span class="gyp-plurk-time">' . $time . '</span>';
 					}
 				}
 				// generate date time end 
@@ -101,7 +98,7 @@ function get_plurk_feeds($username = '', $count = 10, $showtime = true, $timedif
 			}
 		}
 		$result .= '</ul>';
-		$result .= '<div class="plurk-detail"><a href="http://www.plurk.com/'. $username . '">'. $username . "'s Plurk</a>";
+		$result .= '<div class="gyp-plurk-detail"><a href="http://www.plurk.com/'. $username . '">'. $username . "'s Plurk</a>";
 
 		if($isBroken == false)
 		{
