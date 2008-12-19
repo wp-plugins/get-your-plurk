@@ -102,7 +102,7 @@ function get_plurk_feeds($username = '', $count = 10, $showtime = true, $timedif
 
 		if($isBroken == false)
 		{
-			file_put_contents($plurk_config['cache'], $result);
+			@file_put_contents($plurk_config['cache'], $result);
 			return $result;
 		}
 		else
