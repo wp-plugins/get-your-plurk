@@ -4,7 +4,7 @@ Donate link: http://blog.roga.tw/
 Tags: plurk
 Requires at least: 2.7
 Tested up to: 2.7
-Stable tag: 1.0.5
+Stable tag: 1.1.0
 
 "Get your Plurk" could get your plurks from www.plurk.com, and show it on your sidebar.
 You may enable cache option to save the PHP page gerneration time. 
@@ -12,8 +12,9 @@ You may enable cache option to save the PHP page gerneration time.
 == Description ==
 
 *  Cache the plurk to a static page, you don't need to read fetch feed every time.
-*  Display link and post time or not.
+*  Display each plurk's link and post time (or not).
 *  Widget support.
+*  Externel CSS file.
 
 == Installation ==
 
@@ -23,4 +24,14 @@ You may enable cache option to save the PHP page gerneration time.
 
 == Screenshots ==
 
-<igm src="http://gallery.roga.tw/d/36036-3/screen-1.png" alt="screenshot" />
+1. /tags/1.1.0/screenshot-1.png
+
+== TODO ==
+
+*  fetch other's people plurk and integrated with yours
+
+== Changelog ==
+
+*  1.1.0 - plurk looks and feel, and localization file support. remove the "show link option".
+*  1.0.5 - fix some readme error and default options. 
+*  1.0.0 - first release.

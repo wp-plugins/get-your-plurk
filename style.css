@@ -1,32 +1,13 @@
 /* for get-your-plurks */
-.qualifier {	
-	color: #F37D17;	
-	font-size: 10px;
-	background: #E57C43;
-	border-bottom: 1px solid #E57C43;
-	border-right: 1px solid  #E57C43;
-	margin: 0 2px 0 2px;
-	padding: 0 3px;
-	color: white;	
-}
 
-.plurk a, .plurk a:visited {
-	color: #000000;
-}
-
-.plurk {
-	margin: 0px;
-	padding: 0px 5px;
-}
-
-.get-plurks ul {
+ul.gyp-get-plurks {
 	border: 1px solid #E57C43;	
 	background: #E57C43;
 	margin: 0px;
 	padding: 0px;
 }
 
-.get-plurks ul li {
+ul.gyp-get-plurks li {
 	list-style-type: none;	
 	margin: 0px;	
 	line-height: 16px;
@@ -35,7 +16,34 @@
 	background: #E3F2FE;
 }
 
-.plurk-time {
+ul.gyp-get-plurks li a, ul.gyp-get-plurks li a:visited {
+	color: #000000;
+}
+
+.gyp-userlink {
+	font-weight: bold;
+}
+
+	.gyp-loves {background: #B20C0C; border-bottom: 1px solid #334E09; border-right: 1px solid  #334E09;}
+	.gyp-likes {background: #CB2728; border-bottom: 1px solid #313131; border-right: 1px solid  #313131;}
+	.gyp-shares {background: #A74949; border-bottom: 1px solid #454545; border-right: 1px solid  #454545;}
+	.gyp-gives {background: #620E0E; border-bottom: 1px solid #313131; border-right: 1px solid  #313131;}
+.gyp-hates {background: #E57C43; border-bottom: 1px solid #E57C43; border-right: 1px solid  #E57C43;}
+.gyp-wants {background: #E57C43; border-bottom: 1px solid #E57C43; border-right: 1px solid  #E57C43;}
+.gyp-wishes {background: #E57C43; border-bottom: 1px solid #E57C43; border-right: 1px solid  #E57C43;}
+.gyp-needs {background: #E57C43; border-bottom: 1px solid #E57C43; border-right: 1px solid  #E57C43;}
+.gyp-will {background: #E57C43; border-bottom: 1px solid #E57C43; border-right: 1px solid  #E57C43;}
+.gyp-hopes {background: #E57C43; border-bottom: 1px solid #E57C43; border-right: 1px solid  #E57C43;}
+.gyp-asks {background: #E57C43; border-bottom: 1px solid #E57C43; border-right: 1px solid  #E57C43;}
+.gyp-has {background: #E57C43; border-bottom: 1px solid #E57C43; border-right: 1px solid  #E57C43;}
+.gyp-was {background: #E57C43; border-bottom: 1px solid #E57C43; border-right: 1px solid  #E57C43;}
+.gyp-wonders {background: #E57C43; border-bottom: 1px solid #E57C43; border-right: 1px solid  #E57C43;}
+.gyp-feels {background: #E57C43; border-bottom: 1px solid #E57C43; border-right: 1px solid  #E57C43;}}
+.gyp-thinks {background: #E57C43; border-bottom: 1px solid #E57C43; border-right: 1px solid  #E57C43;}
+	.gyp-says {background: #E57C43; border-bottom: 1px solid #E57C43; border-right: 1px solid  #E57C43;}
+.gyp-is {background: #E57C43; border-bottom: 1px solid #E57C43; border-right: 1px solid  #E57C43;}
+
+.gyp-plurk-time {
 	color: #AA5555;	
 	font-style: italic;		
 	font-family: Verdana;
@@ -45,7 +53,7 @@
 	font-size: 9px;
 }
 
-.plurk-detail {
+.gyp-plurk-detail, .gyp-plurk-detail a, .gyp-plurk-detail a:visited  {
 	font-family: Verdana;
 	font-size: 10px;
 	margin: 1em 0;
@@ -53,8 +61,4 @@
 	border-top: 1px solid #7F7F7F;
 	padding: 0.5em 0;	
 	color: #000000;		
-}
-
-.plurk-detail a, .plurk-detail a:visited {
-	color: #000000;
 }
