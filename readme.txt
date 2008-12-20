@@ -4,7 +4,7 @@ Donate link: http://blog.roga.tw/
 Tags: plurk
 Requires at least: 2.1
 Tested up to: 2.7
-Stable tag: 1.1.0
+Stable tag: 1.1.1
 
 "Get your Plurk" could get your plurks from www.plurk.com, and show it on your sidebar.
 You may enable cache option to save the PHP page gerneration time. 
@@ -24,7 +24,7 @@ You may enable cache option to save the PHP page gerneration time.
 
 == Screenshots ==
 
-1. /tags/1.1.0/screenshot-1.png
+1. /tags/1.1.1/screenshot-1.png
 
 == TODO ==
 
@@ -32,6 +32,7 @@ You may enable cache option to save the PHP page gerneration time.
 
 == Changelog ==
 
+*  1.1.1 - fix some css problem.
 *  1.1.0 - plurk looks and feel, and localization config file support. remove the "show link option".
 *  1.0.5 - fix some readme error and default options. 
 *  1.0.0 - first release.

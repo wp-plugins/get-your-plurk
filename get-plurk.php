@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name:  Get your plurk
-Version: 1.1.0
+Version: 1.1.1
 Plugin URI: http://blog.roga.tw/get-your-plurk
 Description: "Get your Plurk" could get your plurks from www.plurk.com, and show them on your sidebar.
 Author: roga
@@ -97,7 +97,6 @@ function get_plurk_feeds($username = '', $count = 10, $showtime = true, $timedif
 			}
 		}
 		$result .= '</ul>';
-		$result .= '<div class="gyp-plurk-detail"><a href="http://www.plurk.com/'. $username . '">'. $username . "'s Plurk</a>";
 
 		if($isBroken == false)
 		{
@@ -130,23 +129,28 @@ function widget_get_plurks($args)
 
 	if($plurk_options['plurk-cache'] == 0)
 		$refresh = true; // for ignore cache
-
+	
 	if($refresh)
 	{
 		$result = get_plurk_feeds($plurk_options['plurk-username'], $plurk_options['plurk-counts'], $plurk_options['plurk-publish-time'], $_POST['plurk-timediff']);
 		echo $result;
 		if($plurk_config['debug'])
-			echo ' - with fresh feeds!</div>';
+		{
+			echo '<div class="gyp-plurk-detail"><a href="http://www.plurk.com/'. $plurk_options['plurk-username'] . '">'. $plurk_options['plurk-username'] . "'s Plurk</a> - with fresh feeds!</div>";
+		}
 	}
 	else
 	{
 		$result = file_get_contents($plurk_config['cache']);
 		echo $result;
 		if($plurk_config['debug'])
-			echo ' - seconds to next re-fresh: '. (filemtime($plurk_config['cache']) + $plurk_options['plurk-cache'] - time()) . '</div>';
+		{
+			echo '<div class="gyp-plurk-detail"><a href="http://www.plurk.com/'. $plurk_options['plurk-username'] . '">' . $plurk_options['plurk-username'] . "'s Plurk</a>";
+			echo ' - seconds to next re-fresh: '. (filemtime($plurk_config['cache']) + $plurk_options['plurk-cache'] - time());
+			echo '</div>';
+		}
 	}
-	if(!$plurk_config['debug'])
-		echo '</div>';
+		
 	echo $after_widget;
 }
 
