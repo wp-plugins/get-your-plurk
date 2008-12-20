@@ -49,8 +49,7 @@ function get_plurk_feeds($username = '', $count = 10, $showtime = true, $timedif
 			$isBroken = true;	//we got some problem to fetch the feed.
 		}
 		else
-		{
-				
+		{			
 			$i = 1;
 			foreach ( $feeds->items as $feed )
 			{				
@@ -177,6 +176,9 @@ function widget_get_plurks_control()
 		update_option('widget_get_plurks', $plurk_options);
 	}
 
+	if(!isset($plurk_options['plurk-cache']) || $plurk_options['plurk-cache'] =='')
+		$plurk_options['plurk-cache'] = 60;	
+	
 	if($plurk_options['plurk-publish-time'] == true)
 		$time_is_checked = 'checked = "checked"';
 	else
