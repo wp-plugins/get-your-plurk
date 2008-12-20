@@ -3,7 +3,7 @@
 Plugin Name:  Get your plurk
 Version: 1.1.0
 Plugin URI: http://blog.roga.tw/get-your-plurk
-Description: Get your plurk
+Description: "Get your Plurk" could get your plurks from www.plurk.com, and show them on your sidebar.
 Author: roga
 Author URI: http://blog.roga.tw
 */
@@ -50,7 +50,6 @@ function get_plurk_feeds($username = '', $count = 10, $showtime = true, $timedif
 		}
 		else
 		{
-			
 				
 			$i = 1;
 			foreach ( $feeds->items as $feed )

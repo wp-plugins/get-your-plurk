@@ -2,7 +2,7 @@
 Contributors: roga
 Donate link: http://blog.roga.tw/
 Tags: plurk
-Requires at least: 2.7
+Requires at least: 2.1
 Tested up to: 2.7
 Stable tag: 1.1.0
 
@@ -32,6 +32,6 @@ You may enable cache option to save the PHP page gerneration time.
 
 == Changelog ==
 
-*  1.1.0 - plurk looks and feel, and localization file support. remove the "show link option".
+*  1.1.0 - plurk looks and feel, and localization config file support. remove the "show link option".
 *  1.0.5 - fix some readme error and default options. 
 *  1.0.0 - first release.
