@@ -131,7 +131,7 @@ function widget_get_plurks($args)
 	
 	if($refresh)
 	{
-		$result = get_plurk_feeds($plurk_options['plurk-username'], $plurk_options['plurk-counts'], $plurk_options['plurk-publish-time'], $_POST['plurk-timediff']);
+		$result = get_plurk_feeds($plurk_options['plurk-username'], $plurk_options['plurk-counts'], $plurk_options['plurk-publish-time'], $plurk_options['plurk-timediff']);
 		echo $result;
 		if($plurk_config['debug'])
 		{
@@ -172,7 +172,7 @@ function widget_get_plurks_control()
 	if ( $plurk_options != $new_plurk_options )
 	{
 		$plurk_options = $new_plurk_options;
-		get_plurk_feeds($plurk_options['plurk-username'], $plurk_options['plurk-counts'], $plurk_options['plurk-publish-time'], $_POST['plurk-timediff'], $plurk_options['plurk-lang']);			
+		get_plurk_feeds($plurk_options['plurk-username'], $plurk_options['plurk-counts'], $plurk_options['plurk-publish-time'], $plurk_options['plurk-timediff'], $plurk_options['plurk-lang']);			
 		update_option('widget_get_plurks', $plurk_options);
 	}
 
