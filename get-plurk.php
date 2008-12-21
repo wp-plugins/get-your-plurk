@@ -61,7 +61,7 @@ function get_plurk_feeds($username = '', $count = 10, $showtime = true, $timedif
 			
 				// 	make patterns
 				for($j = 0; $j<count($locale); $j++)
-					$patterns[$j] = '/^' . $username . ' ' . $locale[$j] . ' /';   			
+					$patterns[$j] = '/^' . $feed['author_name'] . ' ' . $locale[$j] . ' /';   			
 
 				$replacements = explode ("|",file_get_contents( WP_PLUGIN_DIR . '/get-your-plurk/lang.css.cfg'));
 
@@ -201,7 +201,7 @@ function widget_get_plurks_control()
 	<p><label for="plurk-lang" >localization:</label> 
 		<select name="plurk-lang">
 			<option value="en_us">English</option>
-			<option value="zh_tw" <?php echo $lang_is_selected; ?>"> 繁體中文 </option>
+			<option value="zh_tw" <?php echo $lang_is_selected; ?>"> 蝜�銝剜� </option>
 		</select>	
 	<p><label for="plurk-publish-time" >Show publish time: </label><input id="plurk-publish-time" name="plurk-publish-time" type="checkbox" value="true" <?echo $time_is_checked ?> /> </p>
 	<p><label for="plurk-timediff" >Show Timediff: </label><input id="plurk-timediff" name="plurk-timediff" type="checkbox" value="true" <?echo $timediff_is_checked ?> /> show "(*) hours ago" or "date time"</p>
