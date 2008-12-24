@@ -1,7 +1,6 @@
 /* for get-your-plurks */
 
-ul.gyp-get-plurks {
-	border: 1px solid #E57C43;	
+ul.gyp-get-plurks {	
 	background: #E57C43;
 	margin: 0px;
 	padding: 0px;
@@ -29,7 +28,7 @@ a.gyp-userlink, a.gyp-userlink:visited {
 	font-weight: bold;
 }
 
-.gyp-fancy {margin: 0 3px 0 4px; padding: 0 3px; color: #FFFFFF;}
+.gyp-fancy {margin: 0 3px 0 4px; padding: 0 3px; color: #FFFFFF; white-space: nowrap;}
 	.gyp-loves {background: #B20C0C; border-bottom: 1px solid #334E09; border-right: 1px solid  #334E09;}
 	.gyp-likes {background: #CB2728; border-bottom: 1px solid #313131; border-right: 1px solid  #313131;}
 	.gyp-shares {background: #A74949; border-bottom: 1px solid #454545; border-right: 1px solid  #454545;}
