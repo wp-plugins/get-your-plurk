@@ -133,7 +133,7 @@ function widget_get_plurks($args)
 	if($plurk_config['debug'])
 	{ 
 		if ($refresh)
-			echo ' - with fresh feeds!</div>'; 
+			echo ' - with fresh feeds!'; 
 		else
 			echo ' - next refresh: '. (filemtime($plurk_config['cache']) + $plurk_options['plurk-cache'] - time()).'s';
 	}
