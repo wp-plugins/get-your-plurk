@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name:  Get your plurk
-Version: 1.1.1
+Version: 1.1.3
 Plugin URI: http://blog.roga.tw/get-your-plurk
 Description: "Get your Plurk" could get your plurks from www.plurk.com, and show them on your sidebar.
 Author: roga
