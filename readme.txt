@@ -33,12 +33,11 @@ You may enable cache option to save the PHP page gerneration time.
 
 == Screenshots ==
 
-1. /tags/1.1.1/screenshot-1.png
+1. /tags/1.1.3/screenshot-1.png
 
 == TODO ==
 
 *  fetch other's people plurk and integrated with yours
-*  move the cache file to other folder to prevent from wordpress auto-upgrade removing file writable permission.
 
 == Changelog ==
 
