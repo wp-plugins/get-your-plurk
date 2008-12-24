@@ -19,8 +19,17 @@ You may enable cache option to save the PHP page gerneration time.
 == Installation ==
 
 * Put the "get-your-plurk" folder to plugin folders.
-* chmod the "cahce.tmp" file permission to writable (chmod 666 cache.tmp).
-* active the plugin
+* Make a cache folder like /wp-content/cache/ if the cache folder is not exists.
+* add a cache file named "cache.tmp", now you have a cache file like: "wp-content/cache/gyp-cache.tmp"
+* chmod the "gyp-cahce.tmp" file permission to writable (chmod 666 cache.tmp).
+* active the plugin.
+
+** command: 
+** cd /wp-content
+** mkdir cache
+** cd cahce
+** touch gyp-cache.tmp
+** chmod 777 gyp-cache.tmp
 
 == Screenshots ==
 
@@ -29,6 +38,7 @@ You may enable cache option to save the PHP page gerneration time.
 == TODO ==
 
 *  fetch other's people plurk and integrated with yours
+*  move the cache file to other folder to prevent from wordpress auto-upgrade removing file writable permission.
 
 == Changelog ==
 
