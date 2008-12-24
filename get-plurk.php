@@ -129,7 +129,7 @@ function widget_get_plurks($args)
 
 	echo $result;
 
-	echo '<div class="gyp-plurk-detail">visit <a href="http://www.plurk.com/' . $plurk_options['plurk-username'] . '">' . $plurk_options['plurk-username'] . "'s Plurk</a>";
+	echo '<div class="gyp-plurk-detail">Visit <a href="http://www.plurk.com/' . $plurk_options['plurk-username'] . '">' . $plurk_options['plurk-username'] . "'s Plurk</a>";
 	if($plurk_config['debug'])
 	{ 
 		if ($refresh)
